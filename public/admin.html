@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Admin | SYNC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: #e0f2fe; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 2rem;">
+
+    <div class="clean-card" style="width: 100%; max-width: 600px; background: #ffffff;">
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <i class="fa-solid fa-lock text-gradient" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+            <h2>Admin Content Manager</h2>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Upload new projects to the Recent Works gallery.</p>
+        </div>
+
+        <form id="admin-upload-form" style="display: flex; flex-direction: column; gap: 1.5rem;">
+            
+            <div>
+                <label style="font-weight: 600; margin-bottom: 0.5rem; display: block;">Admin Password</label>
+                <input type="password" id="admin-pass" class="form-control" placeholder="Enter admin password" required>
+            </div>
+            
+            <div>
+                <label style="font-weight: 600; margin-bottom: 0.5rem; display: block;">Project Title</label>
+                <input type="text" id="proj-title" class="form-control" placeholder="e.g. TurfMate App" required>
+            </div>
+
+            <div>
+                <label style="font-weight: 600; margin-bottom: 0.5rem; display: block;">Cover / Thumbnail Image</label>
+                <input type="file" id="proj-front" class="form-control" accept="image/*" required style="padding: 10px;">
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;">This displays on the grid card.</p>
+            </div>
+
+            <div style="border-top: 1px solid var(--border-light); padding-top: 1.5rem;">
+                <label style="font-weight: 600; margin-bottom: 0.5rem; display: block;">Gallery Images (3-4 max)</label>
+                <input type="file" id="proj-extra" class="form-control" accept="image/*" multiple style="padding: 10px;">
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;">Select multiple files (Hold Ctrl/Cmd). They show up in the modal slider.</p>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="margin-top: 1rem; width: 100%;">
+                Upload Project <i class="fa-solid fa-cloud-arrow-up" style="margin-left: 8px;"></i>
+            </button>
+        </form>
+
+        <div style="margin-top: 3rem; text-align: center; border-top: 1px solid var(--border-light); padding-top: 1.5rem;">
+            <div style="margin-top: 15px;">
+                <a href="index.html" style="color: var(--primary-blue); font-size: 0.9rem; text-decoration: underline;">&larr; Back to Main Site</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

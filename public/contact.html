@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | SYNC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: var(--surface-color);">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo"><img src="logo.png" alt="SYNC Logo" class="nav-logo-img"></a>
+            <ul class="nav-links">
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#portfolio">Recent Work</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="contact.html" class="text-gradient">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section-padding" style="padding-top: 150px; min-height: 80vh;">
+        <div class="container reveal">
+            <div class="text-center" style="margin-bottom: 3rem;">
+                <h1 class="section-title">Get in <span class="text-gradient">Touch</span></h1>
+                <p class="section-subtitle">We reply within a few hours. Let's make something great.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4rem;">
+                
+                <!-- Direct Contact Options -->
+                <div class="clean-card" style="display: flex; flex-direction: column; justify-content: center;">
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Instant Chat</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 2rem;">For the fastest response, reach out to us directly on WhatsApp.</p>
+                    
+                    <a href="#" class="btn btn-primary" style="display: flex; gap: 10px; justify-content: center; margin-bottom: 1rem;">
+                        <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i> Chat on WhatsApp
+                    </a>
+                    
+                    <a href="#" class="btn btn-outline" style="display: flex; gap: 10px; justify-content: center;">
+                        <i class="fa-brands fa-instagram" style="font-size: 1.2rem;"></i> DM on Instagram
+                    </a>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="clean-card">
+                    <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Send a Request</h3>
+                    <form id="general-contact" style="display: flex; flex-direction: column; gap: 1.2rem;">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                        <input type="email" class="form-control" placeholder="Email Address" required>
+                        <textarea class="form-control" placeholder="Tell us about your project..." required></textarea>
+                        <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem; width: 100%;">
+                            Submit Request <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo"><img src="logo.png" alt="SYNC Logo" class="footer-logo-img"></div>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Premium Web Solutions</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; <span id="year"></span> SYNC. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
