@@ -4,85 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | SYNC</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body style="background: var(--surface-color);">
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="nav-logo"><img src="logo.png" alt="SYNC Logo" class="nav-logo-img"></a>
-            <ul class="nav-links">
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#portfolio">Recent Work</a></li>
-                <li><a href="index.html#pricing">Pricing</a></li>
-                <li><a href="contact.html" class="text-gradient">Contact</a></li>
-            </ul>
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="container nav-container">
+        <a href="index.html" class="nav-logo">
+            <img src="logo.png" alt="SYNC Logo" class="nav-logo-img">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#portfolio">Recent Work</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="contact.html" class="text-gradient">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- CONTACT SECTION -->
+<section class="section-padding" style="padding-top: 150px; min-height: 80vh;">
+    <div class="container reveal">
+
+        <div class="text-center" style="margin-bottom: 3rem;">
+            <h1 class="section-title">Get in <span class="text-gradient">Touch</span></h1>
+            <p class="section-subtitle">Reach out directly. No forms, instant replies.</p>
         </div>
-    </nav>
 
-    <section class="section-padding" style="padding-top: 150px; min-height: 80vh;">
-        <div class="container reveal">
-            <div class="text-center" style="margin-bottom: 3rem;">
-                <h1 class="section-title">Get in <span class="text-gradient">Touch</span></h1>
-                <p class="section-subtitle">We reply within a few hours. Let's make something great.</p>
-            </div>
+        <div style="display: flex; justify-content: center;">
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4rem;">
-                
-                <!-- Direct Contact Options -->
-                <div class="clean-card" style="display: flex; flex-direction: column; justify-content: center;">
-                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Instant Chat</h3>
-                    <p style="color: var(--text-muted); margin-bottom: 2rem;">For the fastest response, reach out to us directly on WhatsApp.</p>
-                    
-                    <a href="#" class="btn btn-primary" style="display: flex; gap: 10px; justify-content: center; margin-bottom: 1rem;">
-                        <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i> Chat on WhatsApp
+            <div class="clean-card" style="max-width: 500px; width: 100%; text-align: center;">
+
+                <h3 style="margin-bottom: 1.5rem;">Contact Details</h3>
+
+                <!-- Email -->
+                <p style="margin-bottom: 1rem;">
+                    <i class="fa-solid fa-envelope" style="color: var(--primary-blue); margin-right: 8px;"></i>
+                    <a href="mailto:snehhha2502@gmail.com">snehhha2502@gmail.com</a>
+                </p>
+
+                <!-- Phone -->
+                <p style="margin-bottom: 2rem;">
+                    <i class="fa-solid fa-phone" style="color: var(--primary-blue); margin-right: 8px;"></i>
+                    <a href="tel:+919172467683">+91 91724 67683</a>
+                </p>
+
+                <!-- Buttons -->
+                <div class="hero-btns">
+
+                    <a href="https://wa.me/919172467683" target="_blank" 
+                       class="btn btn-primary"
+                       style="display:flex; justify-content:center; gap:10px; margin-bottom: 1rem;">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Chat on WhatsApp
                     </a>
-                    
-                    <a href="https://www.instagram.com/snehhha_45?igsh=MTdodHZja2p1cWY0eQ==" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="display: flex; gap: 10px; justify-content: center;">
-                        <i class="fa-brands fa-instagram" style="font-size: 1.2rem;"></i> DM on Instagram
+
+                    <a href="https://www.instagram.com/snehhha_45" target="_blank"
+                       class="btn btn-outline"
+                       style="display:flex; justify-content:center; gap:10px;">
+                        <i class="fa-brands fa-instagram"></i>
+                        DM on Instagram
                     </a>
+
                 </div>
 
-                <!-- Contact Form -->
-                <div class="clean-card">
-                    <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Send a Request</h3>
-                    <form id="general-contact" style="display: flex; flex-direction: column; gap: 1.2rem;">
-                        <input type="text" class="form-control" placeholder="Your Name" required>
-                        <input type="email" class="form-control" placeholder="Email Address" required>
-                        <textarea class="form-control" placeholder="Tell us about your project..." required></textarea>
-                        <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem; width: 100%;">
-                            Submit Request <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i>
-                        </button>
-                    </form>
-                </div>
             </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div>
-                    <div class="footer-logo"><img src="logo.png" alt="SYNC Logo" class="footer-logo-img"></div>
-                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Premium Web Solutions</p>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/snehhha_45?igsh=MTdodHZja2p1cWY0eQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-            </div>
-            <div class="copyright">
-                &copy; <span id="year"></span> SYNC. All rights reserved.
-            </div>
+<!-- FOOTER -->
+<footer>
+    <div class="container text-center">
+
+        <p>© <span id="year"></span> SYNC. All rights reserved.</p>
+
+        <!-- Legal Links -->
+        <div style="margin-top:10px;">
+            <a href="terms.html">Terms</a> |
+            <a href="privacy.html">Privacy</a> |
+            <a href="refund.html">Refund</a>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+        <!-- Social -->
+        <div style="margin-top:15px;">
+            <a href="https://www.instagram.com/snehhha_45" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://wa.me/919172467683" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
